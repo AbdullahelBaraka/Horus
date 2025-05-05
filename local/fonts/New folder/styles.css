@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'MyArabicFont';
+  src: url('fonts/my-font.otf') format('opentype');
+}
+
+body {
+  font-family: 'MyArabicFont', sans-serif;
+  direction: rtl;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;  /* Keeps the top bar at the top of the page */
+  z-index: 1000;  /* Makes sure the top bar stays above other content */
+  width: 80%; /* Make the top bar 80% of the screen width */
+  margin: 0 auto; /* Center the top bar horizontally */
+}
+
+.right-text {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.arabic-text {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: .7px;
+}
+
+.english-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  letter-spacing: 1.3px; /* Adjust this value to match Arabic width */
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any padding */
+  margin-left: 20px;
+}
+
+/* Wrapper for content */
+.content-wrapper {
+  width: 80%; /* Content will fill 70% of the page */
+  margin: 0 auto; /* Center the content */
+  padding-top: 20px; /* Add space between the image and content */
+}
+
+.main-image {
+  margin: 0;
+  padding: 0;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; /* Remove rounded corners */
+  display: block;
+  opacity: 1;
+}
+
+.content {
+  margin: 0;
+  padding: 0px; /* Space inside the content section */
+  margin-top: 15px;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; /* Remove rounded corners */
+  display: block;
+}
