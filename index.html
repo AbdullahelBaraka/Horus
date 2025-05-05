@@ -25,7 +25,8 @@
   window.addEventListener('load', () => {
     // Wait for 3 seconds, then redirect to the home page
     setTimeout(() => {
-      window.location.href = '/local/index.html'; // relative path to local folder
+      window.location.href = window.location.origin + '/local/index.html';
+ // relative path to local folder
     }, 3700); // 3000 milliseconds = 3 seconds
   });
 </script>
