@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="logo-text-wrapper">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <div class="loading-text">
+        <p>مستشفى حورس التخصصى</p>
+        <p>المكتب الفنى للسيد الدكتور مدير عام المستشفى</p>
+        <p>د / أمجد عبدالعزيز </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" style="display: none;">
+    <h1>مرحباً بك في الموقع</h1>
+  </div>
+
+ <script>
+  window.addEventListener('load', () => {
+    // Wait for 3 seconds, then redirect to the home page
+    setTimeout(() => {
+      window.location.href = '../local/index.html'; // relative path to local folder
+    }, 3700); // 3000 milliseconds = 3 seconds
+  });
+</script>
+</body>
+</html>
